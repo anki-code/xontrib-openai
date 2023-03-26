@@ -2,13 +2,9 @@
 Use Open AI models in xonsh shell. 
 """
 
-@aliases.register("ai")
-def __ai(args):
-    import openai
-    openai.api_key = __xonsh__.env.get('OPENAI_API_KEY', '')
-    response = openai.Completion.create(**{
-        'prompt': ' '.join(args),
-        'engine': __xonsh__.env.get('OPENAI_MODEL', 'text-davinci-003'),
-        'max_tokens': __xonsh__.env.get('OPENAI_MAX_TOKENS', 500)
-    })
-    print(response.choices[0].text.strip())
+aliases['ai'] = """openai api @(__xonsh__.env.get('OPENAI_METHOD', 'completions.create')) \
+                     -m @(__xonsh__.env.get('OPENAI_MODEL', 'text-davinci-003')) \
+                     -t @(__xonsh__.env.get('OPENAI_TONALITY', 0))  \
+                     -M @(__xonsh__.env.get('OPENAI_MAX_TOKENS', 500)) \
+                     @('--stream' if __xonsh__.env.get('OPENAI_STREAM', True) else '') \
+                     -p @(' '.join($args))"""
