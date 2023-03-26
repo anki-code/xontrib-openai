@@ -26,6 +26,15 @@ $OPENAI_API_KEY = 'abcd1234'  # https://platform.openai.com/account/api-keys
 # $OPENAI_MAX_TOKENS = 500
 
 xontrib load openai
+
+ai! hello
+# Hello! How are you?
+```
+In case you need addon with new model:
+```python
+aliases['ai4'] = "$OPENAI_MODEL='gpt-4' $OPENAI_MAX_TOKENS=1000 @('ai')"
+
+ai4! hello gpt-4
 ```
 
 ### Get shell commands
