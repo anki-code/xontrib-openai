@@ -46,7 +46,7 @@ ai! send post request with json data on python
 
 ## Known issues
 
-To use `gpt-4` model join [wait list](https://openai.com/waitlist/gpt-4-api).
+To use [`gpt-4`](https://platform.openai.com/docs/models/gpt-4) model join [wait list](https://openai.com/waitlist/gpt-4-api).
 
 ## Credits
 
