@@ -10,3 +10,4 @@ jobs:
     uses: xonsh/actions/.github/workflows/test-poetry-xontrib.yml@main
     with:
       cache-dependency-path: pyproject.toml
+      xontrib_name: openai
