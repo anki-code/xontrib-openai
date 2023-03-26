@@ -20,8 +20,10 @@ xpip install -U xontrib-openai
 
 ```xsh
 $OPENAI_API_KEY = 'abcd1234'  # https://platform.openai.com/account/api-keys
+
+# Defaults:
 # $OPENAI_MODEL = 'text-davinci-003'  # https://platform.openai.com/docs/models/overview
-# $OPENAI_MAX_TOKENS = 100  # default
+# $OPENAI_MAX_TOKENS = 100
 
 xontrib load openai
 
