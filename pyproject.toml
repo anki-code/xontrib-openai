@@ -32,7 +32,7 @@ Code = "https://github.com/anki-code/xontrib-openai"
 
 
 [tool.poetry.dependencies]
-python = ">=3.7.1"
+python = ">=3.8"
 xonsh = ">=0.12.5"
 openai = ">=0.27"
 
