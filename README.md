@@ -12,7 +12,6 @@ If you like the idea click ⭐ on the repo and <a href="https://twitter.com/inte
 To install use pip:
 
 ```xsh
-#xpip install xontrib-openai
 xpip install -U git+https://github.com/anki-code/xontrib-openai
 ```
 
