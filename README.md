@@ -20,7 +20,7 @@ xpip install -U git+https://github.com/anki-code/xontrib-openai
 
 ```xsh
 $OPENAI_API_KEY = 'abcd1234'  # https://platform.openai.com/account/api-keys
-# $OPENAI_MODEL = 'text-davinci-003'
+# $OPENAI_MODEL = 'text-davinci-003'  # https://platform.openai.com/docs/models/overview
 # $OPENAI_MAX_TOKENS = 100  # default
 
 xontrib load openai
