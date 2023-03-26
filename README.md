@@ -18,7 +18,7 @@ xpip install -U xontrib-openai
 
 ## Usage
 
-```xsh
+```python
 $OPENAI_API_KEY = 'abcd1234'  # https://platform.openai.com/account/api-keys
 
 # Defaults:
@@ -26,10 +26,22 @@ $OPENAI_API_KEY = 'abcd1234'  # https://platform.openai.com/account/api-keys
 # $OPENAI_MAX_TOKENS = 100
 
 xontrib load openai
+```
 
+### Get shell commands
+```python
 ai! write git commit on bash. Give me only command
 # git commit -m "Commit message"
+```
+```python
+ai! how to remove all containers and images in docker. Only commands please
+# docker stop $(docker ps -a -q)
+# docker rm $(docker ps -a -q)
+# docker rmi $(docker images -a -q)
+```
 
+### Get Python code
+```python
 ai! send post request with json data on python
 # import requests
 # import json
