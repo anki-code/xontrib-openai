@@ -71,6 +71,13 @@ ai! give me json where keys are fruits and values are most common fruit color
 #     "Watermelon": "Green"
 # }
 ```
+Using the data:
+```python
+import json
+j = json.loads($(ai give me small json))
+j
+# {'name': 'John', 'age': 25}
+```
 
 ## Known issues
 
