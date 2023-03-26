@@ -56,6 +56,22 @@ ai! send post request with json data on python
 # response = requests.post(url, data=json.dumps(data), headers=headers)
 ```
 
+### Generate data
+```python
+ai! give me json where keys are fruits and values are most common fruit color
+# {
+#     "Apple": "Red",
+#     "Banana": "Yellow",
+#     "Orange": "Orange",
+#     "Grape": "Purple",
+#     "Strawberry": "Red",
+#     "Lemon": "Yellow",
+#     "Kiwi": "Green",
+#     "Cherry": "Red",
+#     "Watermelon": "Green"
+# }
+```
+
 ## Known issues
 
 To use [`gpt-4`](https://platform.openai.com/docs/models/gpt-4) model join [wait list](https://openai.com/waitlist/gpt-4-api).
