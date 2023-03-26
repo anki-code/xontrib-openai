@@ -30,7 +30,7 @@ xontrib load openai
 
 ### Get shell commands
 ```python
-ai! write git commit on bash. Give me only command
+ai! how to git commit. Give me only command
 # git commit -m "Commit message"
 ```
 ```python
