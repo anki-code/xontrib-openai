@@ -9,6 +9,6 @@ def __ai(args):
     response = openai.Completion.create(**{
         'prompt': ' '.join(args),
         'engine': __xonsh__.env.get('OPENAI_MODEL', 'text-davinci-003'),
-        'max_tokens': __xonsh__.env.get('OPENAI_MAX_TOKENS', 100)
+        'max_tokens': __xonsh__.env.get('OPENAI_MAX_TOKENS', 500)
     })
     print(response.choices[0].text.strip())
