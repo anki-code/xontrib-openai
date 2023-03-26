@@ -35,6 +35,7 @@ In case you need addon with new model:
 aliases['ai4'] = "$OPENAI_MODEL='gpt-4' $OPENAI_MAX_TOKENS=1000 @('ai')"
 
 ai4! hello gpt-4
+# Hello human
 ```
 
 ### Get shell commands
